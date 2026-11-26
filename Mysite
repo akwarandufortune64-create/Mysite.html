@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Michael & Esther | Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --burgundy: #721C35;
+    --gold: #D4AF70;
+    --ivory: #FFF9F0;
+    --rose: #D9A6A6;
+    --sage: #9BAF9B;
+    --dark: #33232A;
+    --grey: #81747A;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* OPENING PAGE */
+
+.cover {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff9f0,
+        #f4e6df
+    );
+}
+
+.top-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--burgundy);
+
+    margin-bottom: 35px;
+}
+
+.couple-names {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(65px, 12vw, 100px);
+
+    font-weight: 400;
+
+    color: var(--burgundy);
+
+    margin-bottom: 30px;
+}
+
+.ampersand {
+    color: var(--gold);
+}
+
+.cover-description {
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    color: var(--grey);
+
+    margin-bottom: 45px;
+}
+
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+
+    background: var(--burgundy);
+
+    color: white;
+
+    padding: 17px 35px;
+
+    border: 1px solid var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    transition: 0.4s;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--gold);
+    color: var(--burgundy);
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    color: white;
+
+    background:
+    linear-gradient(
+        rgba(50, 10, 25, 0.45),
+        rgba(50, 10, 25, 0.55)
+    ),
+
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85')
+
+    center/cover no-repeat;
+}
+
+.hero-content h2 {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(60px, 12vw, 100px);
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    line-height: 2.5;
+
+    margin-bottom: 35px;
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 90px 22px;
+}
+
+.script-title {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 45px;
+
+    color: var(--gold);
+
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: var(--burgundy);
+
+    margin-bottom: 25px;
+}
+
+.description {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: var(--grey);
+
+    font-size: 13px;
+
+    line-height: 2.2;
+}
+
+
+/* INFORMATION CARDS */
+
+.card {
+    max-width: 650px;
+
+    margin: 25px auto;
+
+    padding: 40px 25px;
+
+    background: white;
+
+    border: 1px solid #EADBC1;
+
+    box-shadow: 0 10px 35px rgba(114, 28, 53, 0.05);
+}
+
+.card-label {
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+
+    color: var(--burgundy);
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--grey);
+
+    font-size: 12px;
+
+    line-height: 2.2;
+}
+
+
+/* MAP BUTTON */
+
+.map-button {
+    display: inline-block;
+
+    background: var(--burgundy);
+
+    color: white;
+
+    padding: 15px 25px;
+
+    margin-top: 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    border: 1px solid var(--gold);
+
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background: var(--gold);
+    color: var(--burgundy);
+}
+
+
+/* EVENT PROGRAMME */
+
+.timeline {
+    max-width: 550px;
+
+    margin: 40px auto;
+
+    text-align: left;
+
+    border-left: 2px solid var(--gold);
+
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+
+    position: absolute;
+
+    left: -38px;
+
+    top: 5px;
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: var(--burgundy);
+
+    border: 2px solid var(--gold);
+}
+
+.timeline-item span {
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.timeline-item h3 {
+    font-family: 'Playfair Display', serif;
+
+    color: var(--burgundy);
+
+    font-size: 19px;
+
+    margin: 10px 0;
+}
+
+
+/* DRESS CODE */
+
+.colours {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.colour-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--grey);
+
+    font-size: 11px;
+}
+
+.colour-circle {
+    width: 25px;
+
+    height: 25px;
+
+    border-radius: 50%;
+}
+
+.burgundy {
+    background: #721C35;
+}
+
+.gold {
+    background: #D4AF70;
+}
+
+.rose {
+    background: #D9A6A6;
+}
+
+.sage {
+    background: #9BAF9B;
+}
+
+
+/* COUNTDOWN */
+
+.countdown-box {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+    padding: 40px 20px;
+
+    background: white;
+
+    border: 1px solid #EADBC1;
+
+    max-width: 650px;
+
+    margin: 30px auto;
+}
+
+.time-unit strong {
+    display: block;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 40px;
+
+    color: var(--burgundy);
+
+    font-weight: 500;
+}
+
+.time-unit span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+.countdown-message {
+    color: var(--burgundy);
+
+    font-size: 14px;
+
+    margin-top: 20px;
+}
+
+
+/* GIFT SECTION */
+
+.account-box {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+.account-number {
+    padding: 15px;
+
+    border: 1px dashed var(--gold);
+
+    color: var(--burgundy);
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.copy-button {
+    padding: 15px 20px;
+
+    background: var(--burgundy);
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 10px;
+}
+
+#copyMessage {
+    margin-top: 15px;
+
+    color: var(--sage);
+}
+
+
+/* RSVP FORM */
+
+.rsvp-form {
+    max-width: 550px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border: 1px solid #EADBC1;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border: 1px solid #EADBC1;
+
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 12px;
+
+    background: var(--ivory);
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus,
+.rsvp-form textarea:focus {
+    border-color: var(--gold);
+}
+
+.rsvp-form button {
+    margin-top: 15px;
+
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 65px 20px;
+
+    background: var(--burgundy);
+
+    color: white;
+}
+
+footer .couple-names {
+    color: white;
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 11px;
+
+    line-height: 2;
+
+    letter-spacing: 1px;
+
+    color: #EADBC1;
+}
+
+
+/* BACK TO TOP */
+
+.back-top {
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 45px;
+
+    height: 45px;
+
+    background: var(--gold);
+
+    color: var(--burgundy);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    box-shadow: 0 5px 15px #0002;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width: 600px) {
+
+    .section {
+        padding: 65px 18px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .countdown-box {
+        gap: 25px;
+    }
+
+    .time-unit strong {
+        font-size: 32px;
+    }
+
+    .card {
+        padding: 30px 18px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .cover-description {
+        letter-spacing: 2px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- OPENING INVITATION -->
+
+<header class="cover" id="top">
+
+    <p class="top-label">
+        TO LOVE, LAUGHTER & FOREVER
+    </p>
+
+    <h1 class="couple-names">
+
+        Michael
+
+        <span class="ampersand">&</span>
+
+        Esther
+
+    </h1>
+
+    <p class="cover-description">
+        REQUEST THE PLEASURE OF YOUR COMPANY
+    </p>
+
+    <a href="#invitation" class="button">
+
+        OPEN INVITATION
+
+    </a>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<div class="hero" id="invitation">
+
+    <div class="hero-content">
+
+        <h2>Michael & Esther</h2>
+
+        <p>
+
+            TWO HEARTS, ONE BEAUTIFUL JOURNEY
+
+            <br>
+
+            DECEMBER 19, 2026
+
+        </p>
+
+        <a href="#details" class="button">
+
+            EXPLORE OUR DAY
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- INTRODUCTION -->
+
+<section class="section">
+
+    <p class="script-title">
+        Together with our families
+    </p>
+
+    <h2 class="section-title">
+
+        We Are Getting Married!
+
+    </h2>
+
+    <p class="description">
+
+        Love brought us together, friendship made us
+        stronger, and now we are ready to begin forever.
+
+        We would be honoured to have you join us as
+        we celebrate this beautiful new chapter.
+
+        Your presence will mean the world to us.
+
+    </p>
+
+</section>
+
+
+
+<!-- EVENT DETAILS -->
+
+<section class="section" id="details">
+
+    <p class="script-title">
+        Save the date
+    </p>
+
+    <h2 class="section-title">
+
+        Wedding Details
+
+    </h2>
+
+
+    <div class="card">
+
+        <p class="card-label">
+
+            THE WEDDING CEREMONY
+
+        </p>
+
+        <h3>
+
+            Lekota Event Centre
+
+        </h3>
+
+        <p>
+
+            December 19, 2026
+
+            <br>
+
+            10:00 AM
+
+            <br>
+
+            Aba, Abia State, Nigeria
+
+        </p>
+
+
+        <a
+        href="https://www.google.com/maps/search/?api=1&query=Lekota+Event+Centre+Aba+Abia+State+Nigeria"
+        target="_blank"
+        rel="noopener"
+        class="map-button">
+
+            GET DIRECTIONS
+
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <p class="card-label">
+
+            WEDDING RECEPTION
+
+        </p>
+
+        <h3>
+
+            Lekota Event Centre
+
+        </h3>
+
+        <p>
+
+            December 19, 2026
+
+            <br>
+
+            1:00 PM
+
+            <br>
+
+            Aba, Abia State
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ORDER OF EVENTS -->
+
+<section class="section">
+
+    <p class="script-title">
+
+        The celebration
+
+    </p>
+
+    <h2 class="section-title">
+
+        Order of Events
+
+    </h2>
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <span>10:00 AM</span>
+
+            <h3>Arrival of Guests</h3>
+
+            <p>
+
+                Welcome and guest reception.
+
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <span>11:00 AM</span>
+
+            <h3>Wedding Ceremony</h3>
+
+            <p>
+
+                The exchange of vows and rings.
+
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <span>1:00 PM</span>
+
+            <h3>Reception & Celebration</h3>
+
+            <p>
+
+                Food, music, dancing and beautiful memories.
+
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <span>4:00 PM</span>
+
+            <h3>Closing & Appreciation</h3>
+
+            <p>
+
+                Thank you for celebrating with us.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- DRESS CODE -->
+
+<section class="section">
+
+    <p class="script-title">
+
+        Dress to impress
+
+    </p>
+
+    <h2 class="section-title">
+
+        Dress Code
+
+    </h2>
+
+
+    <div class="card">
+
+        <p class="card-label">
+
+            OUR WEDDING COLOURS
+
+        </p>
+
+        <h3>
+
+            Burgundy & Champagne Gold
+
+        </h3>
+
+
+        <div class="colours">
+
+
+            <div class="colour-item">
+
+                <span class="colour-circle burgundy"></span>
+
+                Burgundy
+
+            </div>
+
+
+            <div class="colour-item">
+
+                <span class="colour-circle gold"></span>
+
+                Champagne Gold
+
+            </div>
+
+
+            <div class="colour-item">
+
+                <span class="colour-circle rose"></span>
+
+                Dusty Rose
+
+            </div>
+
+
+            <div class="colour-item">
+
+                <span class="colour-circle sage"></span>
+
+                Sage Green
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- COUNTDOWN -->
+
+<section class="section">
+
+    <p class="script-title">
+
+        The big day is approaching
+
+    </p>
+
+    <h2 class="section-title">
+
+        Counting Down To Forever
+
+    </h2>
+
+
+    <div class="countdown-box">
+
+
+        <div class="time-unit">
+
+            <strong id="days">00</strong>
+
+            <span>DAYS</span>
+
+        </div>
+
+
+        <div class="time-unit">
+
+            <strong id="hours">00</strong>
+
+            <span>HOURS</span>
+
+        </div>
+
+
+        <div class="time-unit">
+
+            <strong id="minutes">00</strong>
+
+            <span>MINUTES</span>
+
+        </div>
+
+
+        <div class="time-unit">
+
+            <strong id="seconds">00</strong>
+
+            <span>SECONDS</span>
+
+        </div>
+
+
+    </div>
+
+
+    <p id="countdownMessage" class="countdown-message">
+
+        Every second brings us closer!
+
+    </p>
+
+</section>
+
+
+
+<!-- GIFT REGISTRY -->
+
+<section class="section">
+
+    <p class="script-title">
+
+        Your love is enough
+
+    </p>
+
+    <h2 class="section-title">
+
+        Gift Registry
+
+    </h2>
+
+
+    <div class="card">
+
+        <p class="card-label">
+
+            A LITTLE TOKEN OF LOVE
+
+        </p>
+
+
+        <h3>
+
+            Michael & Esther
+
+        </h3>
+
+
+        <p>
+
+            Your presence is our greatest gift.
+
+            However, if you wish to bless us with a
+            monetary gift, you can use the account
+            details below.
+
+        </p>
+
+
+        <p style="margin-top:20px;">
+
+            FICTIONAL BANK
+
+            <br>
+
+            Savings Account
+
+        </p>
+
+
+        <div class="account-box">
+
+            <span class="account-number" id="accountNumber">
+
+                0123456789
+
+            </span>
+
+
+            <button
+            class="copy-button"
+            onclick="copyAccount()">
+
+                COPY NUMBER
+
+            </button>
+
+        </div>
+
+
+        <p id="copyMessage"></p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- RSVP -->
+
+<section class="section">
+
+    <p class="script-title">
+
+        We saved you a seat
+
+    </p>
+
+
+    <h2 class="section-title">
+
+        Kindly RSVP
+
+    </h2>
+
+
+    <p class="description">
+
+        We would love to know if you will be
+        celebrating this special day with us.
+
+        Kindly confirm your attendance.
+
+    </p>
+
+
+    <form class="rsvp-form" id="rsvpForm">
+
+
+        <input
+        type="text"
+        id="guestName"
+        placeholder="Your Full Name"
+        required>
+
+
+        <input
+        type="email"
+        id="guestEmail"
+        placeholder="Your Email Address"
+        required>
+
+
+        <select id="attendance" required>
+
+            <option value="">Will you attend?</option>
+
+            <option value="Joyfully accepts">
+
+                Joyfully accepts
+
+            </option>
+
+            <option value="Regretfully declines">
+
+                Regretfully declines
+
+            </option>
+
+        </select>
+
+
+        <input
+        type="number"
+        id="guestCount"
+        placeholder="Number of guests"
+        min="1"
+        max="5"
+        value="1"
+        required>
+
+
+        <textarea
+        id="guestMessage"
+        rows="4"
+        placeholder="Leave us a message (optional)"></textarea>
+
+
+        <button
+        type="submit"
+        class="button">
+
+            SUBMIT RSVP
+
+        </button>
+
+
+    </form>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2 class="couple-names">
+
+        Michael <span class="ampersand">&</span> Esther
+
+    </h2>
+
+
+    <p>
+
+        TWO HEARTS.
+
+        ONE LOVE.
+
+        FOREVER.
+
+    </p>
+
+
+    <p style="margin-top:20px;">
+
+        #MichaelAndEsther2026
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- BACK TO TOP BUTTON -->
+
+<a href="#top" class="back-top">
+
+    ↑
+
+</a>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+
+/* LIVE WEDDING COUNTDOWN */
+
+/*
+December 19, 2026
+10:00 AM
+Nigeria time (UTC +1)
+*/
+
+const weddingDate = new Date(
+    "2026-12-19T10:00:00+01:00"
+).getTime();
+
+
+function updateCountdown() {
+
+    const now = Date.now();
+
+    const difference = weddingDate - now;
+
+
+    if (difference <= 0) {
+
+        document.getElementById("days").textContent = "00";
+
+        document.getElementById("hours").textContent = "00";
+
+        document.getElementById("minutes").textContent = "00";
+
+        document.getElementById("seconds").textContent = "00";
+
+
+        document.getElementById("countdownMessage").textContent =
+
+        difference < 0
+        ? "The celebration has begun!"
+        : "It's time to celebrate!";
+
+
+        return;
+
+    }
+
+
+    const days = Math.floor(
+        difference / (1000 * 60 * 60 * 24)
+    );
+
+
+    const hours = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+    );
+
+
+    const minutes = Math.floor(
+        (difference / (1000 * 60)) % 60
+    );
+
+
+    const seconds = Math.floor(
+        (difference / 1000) % 60
+    );
+
+
+    document.getElementById("days").textContent =
+        String(days).padStart(2, "0");
+
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+
+}
+
+
+// Run immediately
+
+updateCountdown();
+
+
+// Update every second
+
+setInterval(updateCountdown, 1000);
+
+
+
+/* COPY ACCOUNT NUMBER FUNCTION */
+
+function copyAccount() {
+
+    const account =
+        document.getElementById("accountNumber").textContent.trim();
+
+
+    const message =
+        document.getElementById("copyMessage");
+
+
+    if (navigator.clipboard && window.isSecureContext) {
+
+        navigator.clipboard.writeText(account)
+
+        .then(() => {
+
+            message.textContent = "Account number copied successfully!";
+
+        })
+
+        .catch(() => {
+
+            fallbackCopy(account);
+
+        });
+
+    } else {
+
+        fallbackCopy(account);
+
+    }
+
+}
+
+
+function fallbackCopy(text) {
+
+    const temporaryInput = document.createElement("textarea");
+
+    temporaryInput.value = text;
+
+    document.body.appendChild(temporaryInput);
+
+    temporaryInput.select();
+
+    document.execCommand("copy");
+
+    temporaryInput.remove();
+
+
+    document.getElementById("copyMessage").textContent =
+        "Account number copied successfully!";
+
+}
+
+
+
+/* RSVP FORM */
+
+document.getElementById("rsvpForm")
+
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("guestName").value;
+
+
+    const email =
+        document.getElementById("guestEmail").value;
+
+
+    const attendance =
+        document.getElementById("attendance").value;
+
+
+    const guests =
+        document.getElementById("guestCount").value;
+
+
+    const message =
+        document.getElementById("guestMessage").value;
+
+
+    const subject = encodeURIComponent(
+        "Wedding RSVP - " + name
+    );
+
+
+    const body = encodeURIComponent(
+
+        "Guest Name: " + name +
+
+        "\nEmail: " + email +
+
+        "\nAttendance: " + attendance +
+
+        "\nNumber of Guests: " + guests +
+
+        "\nMessage: " + message
+
+    );
+
+
+    /*
+    Replace this email with the couple's
+    actual email address.
+    */
+
+    const emailAddress =
+  
